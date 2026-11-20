@@ -1,11 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{{ parent() }}Homepage{% endblock %}
+{% block title %}{{ parent() }}{{ title }}{% endblock %}
 
 {% block header %}
 
     <navbar>
-        {% include "public/inc/menu.html.twig" %}
+        {% include "public/inc/_menu.html.twig" %}
     </navbar>
 
     <div class="example-wrapper">

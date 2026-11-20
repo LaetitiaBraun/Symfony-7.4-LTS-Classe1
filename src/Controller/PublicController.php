@@ -15,12 +15,16 @@ final class PublicController extends AbstractController
         return $this->render('public/index.html.twig', [
             'controller_name' => 'PublicController',
             'nom' => $nom,
+            'title' => "Homepage",
         ]);
     }
 
         public function contact(): Response
     {
-        // Nous allons envoyer une réponse de type texte en utilisant la classe Response (html basique)
-        return new Response('<body><h1>Page de contact</h1><a href="./">Retour à l\'accueil</a></body>');
+        $nom = "Laetitia";
+       return $this->render('public/index.html.twig', [
+            'title' => "Contact",
+            'nom' => $nom,
+        ]);
     }
 }
