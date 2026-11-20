@@ -19,6 +19,10 @@
         {% endif %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% block body %}
+            {% block header %}header{% endblock %}
+            {% block main %}main{% endblock %}
+            {% block footer %}footer{% endblock %}
+        {% endblock %}
     </body>
 </html>

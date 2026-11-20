@@ -2,17 +2,21 @@
 
 {% block title %}{{ parent() }}Homepage{% endblock %}
 
-{% block body %}
+{% block header %}
 
-<div class="example-wrapper">
-    <h1>Hello {{ nom }} {{ controller_name }}! ✅</h1>
+    <div class="example-wrapper">
+        <h1>Hello {{ nom }} {{ controller_name }}! ✅</h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>C:/WebDev2026/PHP/Symfony/Symfony-7.4-LTS-Classe1/src/Controller/PublicController.php</code></li>
-        <li>Your template at <code>C:/WebDev2026/PHP/Symfony/Symfony-7.4-LTS-Classe1/templates/public/index.html.twig</code></li>
-    </ul>
-</div>
+        <navbar>
+            {% include "public/inc/menu.html.twig" %}
+        </navbar>
+{% endblock %}
+    {% block main %}
+
+    {% endblock %}
+    {% block footer %}
+
+    </div>
 {% endblock %}
 
 {% block language %}fr{% endblock %}
