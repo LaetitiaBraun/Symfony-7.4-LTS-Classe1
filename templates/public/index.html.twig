@@ -4,12 +4,13 @@
 
 {% block header %}
 
+    <navbar>
+        {% include "public/inc/menu.html.twig" %}
+    </navbar>
+
     <div class="example-wrapper">
         <h1>Hello {{ nom }} {{ controller_name }}! ✅</h1>
 
-        <navbar>
-            {% include "public/inc/menu.html.twig" %}
-        </navbar>
 {% endblock %}
     {% block main %}
 

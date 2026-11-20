@@ -17,4 +17,10 @@ final class PublicController extends AbstractController
             'nom' => $nom,
         ]);
     }
+
+        public function contact(): Response
+    {
+        // Nous allons envoyer une réponse de type texte en utilisant la classe Response (html basique)
+        return new Response('<body><h1>Page de contact</h1><a href="./">Retour à l\'accueil</a></body>');
+    }
 }
